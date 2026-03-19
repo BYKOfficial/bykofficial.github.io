@@ -1,0 +1,23 @@
+/* TEAM */
+Creator: Amin Qureshi
+Twitter: @AminQur87615045
+Instagram: @buildyourknowledge2023
+Telegram: @aminsalim4021
+LinkedIn: linkedin.com/in/amin-qureshi-49186938b
+Location: Bhubaneswar, Odisha, India
+
+/* SITE */
+Name: BYK — Build Your Knowledge
+URL: https://bykofficial.github.io
+Description: India ka #1 Hinglish Knowledge Platform
+Language: Hinglish (Hindi + English)
+Technology: HTML5, CSS3, JavaScript ES6+
+Platform: GitHub Pages
+Analytics: Google Analytics (G-6EFKGDXKVV)
+Standards: HTML5, CSS3, WAI-ARIA, Schema.org
+Components: PWA, Service Worker, IndexedDB
+Last update: 2025/03/19
+
+/* THANKS */
+Thanks to all BYK subscribers and supporters!
+Build Your Knowledge — Har Roz Seekho, Har Roz Badho!

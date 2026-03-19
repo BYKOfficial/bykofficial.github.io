@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://bykofficial.github.io/#channels</loc>
+    <video:video>
+      <video:thumbnail_loc>https://bykofficial.github.io/byk-logo.png</video:thumbnail_loc>
+      <video:title>BYK Main — Build Your Knowledge</video:title>
+      <video:description>India ka #1 Hinglish knowledge YouTube channel</video:description>
+      <video:content_loc>https://youtube.com/@buildyourknowledge2495</video:content_loc>
+      <video:player_loc>https://youtube.com/@buildyourknowledge2495</video:player_loc>
+      <video:duration>600</video:duration>
+      <video:publication_date>2023-01-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://bykofficial.github.io/#channels</loc>
+    <video:video>
+      <video:thumbnail_loc>https://bykofficial.github.io/byk-logo.png</video:thumbnail_loc>
+      <video:title>BYK Finance — Economy &amp; Investment</video:title>
+      <video:description>Finance aur economy Hinglish mein</video:description>
+      <video:content_loc>https://youtube.com/@bykfinance</video:content_loc>
+      <video:player_loc>https://youtube.com/@bykfinance</video:player_loc>
+      <video:duration>600</video:duration>
+      <video:publication_date>2023-01-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://bykofficial.github.io/#channels</loc>
+    <video:video>
+      <video:thumbnail_loc>https://bykofficial.github.io/byk-logo.png</video:thumbnail_loc>
+      <video:title>UPSC Edge by BYK</video:title>
+      <video:description>UPSC preparation Hinglish mein</video:description>
+      <video:content_loc>https://www.youtube.com/channel/UCOOTiTjwTgFEXZiBt4XUBOA</video:content_loc>
+      <video:player_loc>https://www.youtube.com/channel/UCOOTiTjwTgFEXZiBt4XUBOA</video:player_loc>
+      <video:duration>600</video:duration>
+      <video:publication_date>2023-01-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+</urlset>

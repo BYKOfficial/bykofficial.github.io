@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square70x70logo src="byk-logo.png"/>
+      <square150x150logo src="byk-logo.png"/>
+      <square310x310logo src="byk-logo.png"/>
+      <wide310x150logo src="byk-logo.png"/>
+      <TileColor>#f5c518</TileColor>
+      <TileImage src="byk-logo.png"/>
+    </tile>
+    <notification>
+      <polling-uri src="https://bykofficial.github.io"/>
+      <frequency>30</frequency>
+      <cycle>1</cycle>
+    </notification>
+  </msapplication>
+</browserconfig>

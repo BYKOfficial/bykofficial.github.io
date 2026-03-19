@@ -1,0 +1,19 @@
+# BYK — Build Your Knowledge
+# robots.txt
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Disallow private files
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Sitemaps
+Sitemap: https://bykofficial.github.io/sitemap-index.xml
+Sitemap: https://bykofficial.github.io/sitemap.xml
+Sitemap: https://bykofficial.github.io/sitemap-images.xml
+Sitemap: https://bykofficial.github.io/sitemap-videos.xml
+
+# Crawl delay
+Crawl-delay: 1

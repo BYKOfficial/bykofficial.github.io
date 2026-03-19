@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://bykofficial.github.io/</loc>
+    <image:image>
+      <image:loc>https://bykofficial.github.io/byk-logo.png</image:loc>
+      <image:title>BYK — Build Your Knowledge Logo</image:title>
+      <image:caption>India ka #1 Hinglish Knowledge Platform</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bykofficial.github.io/og-image.png</image:loc>
+      <image:title>BYK Official Website Preview</image:title>
+      <image:caption>BYK — Build Your Knowledge | India's #1 Knowledge Creator</image:caption>
+    </image:image>
+  </url>
+</urlset>

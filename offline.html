@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Offline — BYK Build Your Knowledge</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="byk-logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #070709;
+    color: #f0f0f0;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  /* Animated background */
+  .bg-circle {
+    position: fixed;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(245,197,24,0.05), transparent 70%);
+    pointer-events: none;
+  }
+  .bg-circle-1 { width: 600px; height: 600px; top: -200px; left: -200px; }
+  .bg-circle-2 { width: 400px; height: 400px; bottom: -100px; right: -100px; background: radial-gradient(circle, rgba(230,57,70,0.04), transparent 70%); }
+
+  .container { max-width: 500px; position: relative; z-index: 1; }
+
+  .logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    animation: pulse 2s ease infinite;
+  }
+  .logo span { color: #f5c518; }
+
+  .signal-icon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    animation: signalPulse 1.5s ease infinite;
+    display: block;
+  }
+
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  h1 span { color: #f5c518; }
+
+  p {
+    color: #6b6b7b;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-wrap { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; }
+
+  .btn {
+    background: #f5c518;
+    color: #070709;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    display: inline-block;
+  }
+  .btn:hover { background: #ffdd57; transform: translateY(-2px); }
+  .btn-outline {
+    background: transparent;
+    color: #f0f0f0;
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+  .btn-outline:hover { border-color: #f5c518; color: #f5c518; background: transparent; }
+
+  .links-section { margin-top: 10px; }
+  .links-title { font-size: 0.72rem; letter-spacing: 3px; text-transform: uppercase; color: #6b6b7b; margin-bottom: 14px; }
+  .links-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .link-item {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #9999aa;
+    font-size: 0.8rem;
+    transition: all .2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .link-item:hover { border-color: rgba(245,197,24,0.3); color: #f5c518; }
+
+  .status-bar {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.75rem;
+    color: #6b6b7b;
+  }
+  .status-dot {
+    width: 8px; height: 8px;
+    background: #e63946;
+    border-radius: 50%;
+    animation: statusPulse 1s ease infinite;
+  }
+  .status-dot.online { background: #22c55e; animation: none; }
+
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.7} }
+  @keyframes signalPulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.1)} }
+  @keyframes statusPulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+</style>
+</head>
+<body>
+  <div class="bg-circle bg-circle-1"></div>
+  <div class="bg-circle bg-circle-2"></div>
+
+  <div class="container">
+    <div class="logo">B<span>Y</span>K</div>
+    <span class="signal-icon">📡</span>
+    <h1>You Are <span>Offline!</span></h1>
+    <p>Internet connection nahi hai — BYK website load nahi ho pa rahi. Connection check karo aur dobara try karo!</p>
+
+    <div class="btn-wrap">
+      <button class="btn" onclick="retryConnection()">🔄 Retry</button>
+      <a href="/" class="btn btn-outline">🏠 Try Home</a>
+    </div>
+
+    <div class="links-section">
+      <div class="links-title">Offline Mein Bhi Dekh Sakte Ho</div>
+      <div class="links-grid">
+        <a href="https://youtube.com/@buildyourknowledge2495" class="link-item">📺 YouTube</a>
+        <a href="https://t.me/aminsalim4021" class="link-item">✈️ Telegram</a>
+        <a href="https://instagram.com/buildyourknowledge2023" class="link-item">📸 Instagram</a>
+        <a href="https://linktr.ee/bykofficial" class="link-item">🌳 All Links</a>
+      </div>
+    </div>
+
+    <div class="status-bar">
+      <div class="status-dot" id="statusDot"></div>
+      <span id="statusText">You are offline</span>
+    </div>
+  </div>
+
+<script>
+function retryConnection(){
+  if(navigator.onLine){
+    window.location.href = '/';
+  } else {
+    const btn = document.querySelector('.btn');
+    btn.textContent = '❌ Still Offline';
+    setTimeout(() => btn.textContent = '🔄 Retry', 2000);
+  }
+}
+
+window.addEventListener('online', () => {
+  document.getElementById('statusDot').classList.add('online');
+  document.getElementById('statusText').textContent = 'Back online! Redirecting...';
+  setTimeout(() => window.location.href = '/', 1500);
+});
+
+window.addEventListener('offline', () => {
+  document.getElementById('statusDot').classList.remove('online');
+  document.getElementById('statusText').textContent = 'You are offline';
+});
+
+// Check on load
+if(navigator.onLine){
+  window.location.href = '/';
+}
+</script>
+</body>
+</html>

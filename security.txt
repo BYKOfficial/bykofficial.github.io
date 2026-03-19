@@ -1,0 +1,7 @@
+Contact: https://t.me/aminsalim4021
+Contact: mailto:qamin219@gmail.com
+Preferred-Languages: en, hi
+Canonical: https://bykofficial.github.io/.well-known/security.txt
+Policy: https://bykofficial.github.io/#privacy-modal
+Acknowledgments: https://bykofficial.github.io/humans.txt
+Expires: 2026-12-31T23:59:59.000Z

@@ -1,0 +1,38 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "BYK — Build Your Knowledge",
+  "home_page_url": "https://bykofficial.github.io",
+  "feed_url": "https://bykofficial.github.io/feed.json",
+  "description": "India ka #1 Hinglish Knowledge Platform",
+  "icon": "https://bykofficial.github.io/icon-512x512.png",
+  "favicon": "https://bykofficial.github.io/icon-96x96.png",
+  "authors": [{"name": "Amin Qureshi", "url": "https://bykofficial.github.io", "avatar": "https://bykofficial.github.io/byk-logo.png"}],
+  "language": "en-IN",
+  "items": [
+    {
+      "id": "https://youtube.com/@buildyourknowledge2495",
+      "url": "https://youtube.com/@buildyourknowledge2495",
+      "title": "BYK Main Channel",
+      "summary": "BYK ka main YouTube channel — Education, Knowledge aur bahut kuch!",
+      "image": "https://bykofficial.github.io/byk-logo.png",
+      "date_published": "2025-03-19T00:00:00+05:30",
+      "tags": ["education", "knowledge", "youtube", "hindi", "hinglish"]
+    },
+    {
+      "id": "https://youtube.com/@bykfinance",
+      "url": "https://youtube.com/@bykfinance",
+      "title": "BYK Finance",
+      "summary": "Finance, Economy aur Investment Hinglish mein!",
+      "date_published": "2025-03-19T00:00:00+05:30",
+      "tags": ["finance", "economy", "investment", "india"]
+    },
+    {
+      "id": "https://youtube.com/@bykbooksummary",
+      "url": "https://youtube.com/@bykbooksummary",
+      "title": "BYK Book Summary",
+      "summary": "Best books ki summary — 10 minute mein!",
+      "date_published": "2025-03-19T00:00:00+05:30",
+      "tags": ["books", "summary", "reading", "knowledge"]
+    }
+  ]
+}
