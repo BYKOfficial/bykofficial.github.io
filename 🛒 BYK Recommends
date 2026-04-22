@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>BYK Recommends — Best Products for Knowledge Seekers</title>
-<meta name="description" content="BYK — Build Your Knowledge ke recommended products. Best earbuds, books, gadgets aur study tools — Amin Qureshi ki personal picks!">
-<meta name="keywords" content="BYK recommends, best earbuds India, podcast earbuds, study gadgets, BYK products">
+<title>BYK Recommends — Best Books, Earbuds & Gadgets for Knowledge Seekers</title>
+<meta name="description" content="BYK — Build Your Knowledge ke recommended products. Best earbuds, books aur gadgets — Amin Qureshi ki personal picks India ke knowledge seekers ke liye!">
+<meta name="keywords" content="BYK recommends, best earbuds India, best books Hindi, UPSC books, self help books Hindi, study gadgets India, podcast earbuds">
 <meta name="author" content="Amin Qureshi — BYK">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bykofficial.github.io/recommend">
-<meta property="og:title" content="BYK Recommends — Best Products">
-<meta property="og:description" content="Amin Qureshi ki personal product picks — earbuds, books, gadgets!">
+<meta property="og:title" content="BYK Recommends — Best Products for Knowledge Seekers">
+<meta property="og:description" content="Amin Qureshi ki personal picks — earbuds, books, gadgets India ke liye!">
 <meta property="og:image" content="https://bykofficial.github.io/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@AminQur87615045">
@@ -21,291 +21,340 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-:root{
-  --gold:#f5c518;--gold2:#ffdd57;
-  --red:#e63946;
-  --dark:#070709;--dark2:#0e0e12;--dark3:#16161c;
-  --white:#f0f0f0;--gray:#6b6b7b;--gray2:#9999aa;
-}
+:root{--gold:#f5c518;--gold2:#ffdd57;--red:#e63946;--dark:#070709;--dark2:#0e0e12;--dark3:#16161c;--white:#f0f0f0;--gray:#6b6b7b;--gray2:#9999aa;}
 html{scroll-behavior:smooth;}
 body{background:var(--dark);color:var(--white);font-family:'DM Sans',sans-serif;overflow-x:hidden;}
-
-/* SCROLLBAR */
 ::-webkit-scrollbar{width:6px;}
 ::-webkit-scrollbar-track{background:var(--dark);}
 ::-webkit-scrollbar-thumb{background:linear-gradient(var(--gold),var(--red));border-radius:3px;}
 ::selection{background:rgba(245,197,24,0.3);color:var(--white);}
-
-/* PROGRESS BAR */
-#progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--red));z-index:9999;width:0%;transition:width 0.1s;}
-
-/* NAV */
+#progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--red));z-index:9999;width:0%;}
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 40px;display:flex;justify-content:space-between;align-items:center;background:rgba(7,7,9,0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.05);}
 .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:4px;color:var(--white);text-decoration:none;}
 .nav-logo span{color:var(--gold);}
-.nav-back{background:rgba(255,255,255,0.06);color:var(--white);padding:8px 18px;border-radius:6px;font-size:0.78rem;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,0.1);transition:all .2s;}
-.nav-back:hover{border-color:var(--gold);color:var(--gold);}
-.nav-home{background:var(--gold);color:var(--dark);padding:8px 18px;border-radius:6px;font-size:0.78rem;font-weight:700;text-decoration:none;transition:all .2s;letter-spacing:1px;}
-.nav-home:hover{background:var(--gold2);}
-
-/* HERO */
-.hero{padding:120px 40px 60px;text-align:center;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(245,197,24,0.08),transparent 60%);}
+.nav-btns{display:flex;gap:10px;}
+.btn-back{background:rgba(255,255,255,0.06);color:var(--white);padding:8px 18px;border-radius:6px;font-size:0.78rem;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,0.1);transition:all .2s;}
+.btn-back:hover{border-color:var(--gold);color:var(--gold);}
+.btn-sub{background:var(--gold);color:var(--dark);padding:8px 18px;border-radius:6px;font-size:0.78rem;font-weight:700;text-decoration:none;transition:all .2s;}
+.btn-sub:hover{background:var(--gold2);}
+.hero{padding:120px 40px 50px;text-align:center;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(245,197,24,0.08),transparent 60%);}
 .hero-badge{display:inline-block;background:rgba(245,197,24,0.08);border:1px solid rgba(245,197,24,0.25);color:var(--gold);padding:6px 18px;border-radius:20px;font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:20px;}
-.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,8vw,6rem);line-height:0.9;margin-bottom:16px;}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,7vw,5rem);line-height:0.95;margin-bottom:16px;}
 .hero h1 span{color:var(--gold);}
-.hero p{color:var(--gray2);font-size:0.95rem;max-width:500px;margin:0 auto 30px;line-height:1.7;}
-.disclosure{background:rgba(245,197,24,0.06);border:1px solid rgba(245,197,24,0.2);border-radius:10px;padding:14px 20px;font-size:0.78rem;color:var(--gray2);max-width:600px;margin:0 auto;line-height:1.6;}
+.hero p{color:var(--gray2);font-size:0.92rem;max-width:500px;margin:0 auto 24px;line-height:1.7;}
+.disclosure{background:rgba(245,197,24,0.05);border:1px solid rgba(245,197,24,0.15);border-radius:10px;padding:12px 20px;font-size:0.75rem;color:var(--gray2);max-width:600px;margin:0 auto;line-height:1.6;}
 .disclosure strong{color:var(--gold);}
-
-/* MAIN */
 .container{max-width:1100px;margin:0 auto;padding:0 40px 80px;}
-
-/* CATEGORY TABS */
-.tabs{display:flex;gap:10px;flex-wrap:wrap;margin:40px 0 30px;justify-content:center;}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin:36px 0 28px;justify-content:center;}
 .tab{padding:9px 22px;border-radius:20px;font-size:0.8rem;font-weight:600;cursor:pointer;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:var(--gray2);transition:all .2s;}
 .tab.active,.tab:hover{background:var(--gold);border-color:var(--gold);color:var(--dark);}
-
-/* CATEGORY SECTION */
 .cat-section{margin-bottom:50px;}
-.cat-title{font-family:'Bebas Neue',sans-serif;font-size:2rem;margin-bottom:6px;}
+.cat-header{margin-bottom:24px;}
+.cat-label{font-size:0.7rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.cat-title{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;line-height:1;}
 .cat-title span{color:var(--gold);}
-.cat-sub{font-size:0.85rem;color:var(--gray2);margin-bottom:24px;}
+.cat-sub{font-size:0.82rem;color:var(--gray2);margin-top:6px;}
 .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.06),transparent);margin:40px 0;}
-
-/* PRODUCT GRID */
-.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-
-/* PRODUCT CARD */
-.prod-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.06);border-radius:16px;overflow:hidden;transition:all .3s;position:relative;}
-.prod-card:hover{border-color:rgba(245,197,24,0.3);transform:translateY(-5px);box-shadow:0 20px 60px rgba(0,0,0,0.4);}
-.prod-badge{position:absolute;top:14px;left:14px;background:var(--gold);color:var(--dark);padding:4px 10px;border-radius:20px;font-size:0.65rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
-.prod-badge.red{background:var(--red);}
-.prod-badge.green{background:#22c55e;}
-.prod-img{background:var(--dark3);height:120px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;}
-.prod-body{padding:18px;}
-.prod-category{font-size:0.68rem;color:var(--gold);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;}
-.prod-name{font-weight:700;font-size:0.95rem;margin-bottom:6px;line-height:1.4;}
-.prod-desc{font-size:0.78rem;color:var(--gray2);line-height:1.6;margin-bottom:14px;}
-.prod-rating{display:flex;align-items:center;gap:6px;margin-bottom:14px;}
-.stars{color:var(--gold);font-size:0.85rem;}
-.rating-text{font-size:0.72rem;color:var(--gray2);}
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.prod-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.06);border-radius:16px;overflow:hidden;transition:all .3s;position:relative;display:flex;flex-direction:column;}
+.prod-card:hover{border-color:rgba(245,197,24,0.3);transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,0.4);}
+.prod-badge{position:absolute;top:12px;left:12px;padding:4px 10px;border-radius:20px;font-size:0.62rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;z-index:1;}
+.badge-gold{background:var(--gold);color:var(--dark);}
+.badge-red{background:var(--red);color:#fff;}
+.badge-green{background:#22c55e;color:#fff;}
+.badge-blue{background:#3b82f6;color:#fff;}
+.prod-img{background:var(--dark3);height:110px;display:flex;align-items:center;justify-content:center;font-size:3rem;border-bottom:1px solid rgba(255,255,255,0.05);}
+.prod-body{padding:16px;flex:1;display:flex;flex-direction:column;}
+.prod-cat{font-size:0.65rem;color:var(--gold);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;}
+.prod-name{font-weight:700;font-size:0.9rem;margin-bottom:5px;line-height:1.4;color:var(--white);}
+.prod-desc{font-size:0.75rem;color:var(--gray2);line-height:1.6;margin-bottom:12px;flex:1;}
+.prod-stars{color:var(--gold);font-size:0.8rem;margin-bottom:12px;}
+.prod-stars span{font-size:0.7rem;color:var(--gray2);margin-left:4px;}
 .prod-btns{display:flex;gap:8px;flex-wrap:wrap;}
-.btn-amazon{background:var(--gold);color:var(--dark);padding:9px 16px;border-radius:8px;font-size:0.75rem;font-weight:700;text-decoration:none;letter-spacing:1px;transition:all .2s;display:flex;align-items:center;gap:5px;flex:1;justify-content:center;}
-.btn-amazon:hover{background:var(--gold2);transform:translateY(-1px);}
-.btn-flipkart{background:rgba(0,120,215,0.15);color:#0078d7;border:1px solid rgba(0,120,215,0.3);padding:9px 16px;border-radius:8px;font-size:0.75rem;font-weight:700;text-decoration:none;letter-spacing:1px;transition:all .2s;display:flex;align-items:center;gap:5px;flex:1;justify-content:center;}
-.btn-flipkart:hover{background:rgba(0,120,215,0.25);transform:translateY(-1px);}
-
-/* COMING SOON CARD */
-.coming-card{background:var(--dark2);border:1px dashed rgba(255,255,255,0.1);border-radius:16px;padding:30px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:200px;}
-.coming-card .icon{font-size:2.5rem;opacity:0.4;}
-.coming-card p{font-size:0.8rem;color:var(--gray);font-weight:600;}
-
-/* NEWSLETTER STRIP */
-.nl-strip{background:linear-gradient(135deg,rgba(245,197,24,0.08),rgba(230,57,70,0.05));border:1px solid rgba(245,197,24,0.15);border-radius:16px;padding:30px 40px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:40px;}
-.nl-strip h3{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;}
+.btn-amazon{background:var(--gold);color:var(--dark);padding:8px 14px;border-radius:7px;font-size:0.72rem;font-weight:700;text-decoration:none;transition:all .2s;flex:1;text-align:center;}
+.btn-amazon:hover{background:var(--gold2);}
+.btn-flip{background:rgba(30,100,255,0.12);color:#5b9fff;border:1px solid rgba(30,100,255,0.25);padding:8px 14px;border-radius:7px;font-size:0.72rem;font-weight:700;text-decoration:none;transition:all .2s;flex:1;text-align:center;}
+.btn-flip:hover{background:rgba(30,100,255,0.2);}
+.coming-card{background:var(--dark2);border:2px dashed rgba(255,255,255,0.08);border-radius:16px;padding:30px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:180px;}
+.coming-card .icon{font-size:2.2rem;opacity:0.35;}
+.coming-card .title{font-size:0.82rem;color:var(--gray2);font-weight:600;}
+.coming-card .sub{font-size:0.7rem;color:var(--gray);}
+.nl-strip{background:linear-gradient(135deg,rgba(245,197,24,0.07),rgba(230,57,70,0.04));border:1px solid rgba(245,197,24,0.15);border-radius:16px;padding:28px 36px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:40px 0;}
+.nl-strip h3{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;}
 .nl-strip h3 span{color:var(--gold);}
-.nl-strip p{font-size:0.82rem;color:var(--gray2);margin-top:4px;}
-.nl-strip a{background:var(--gold);color:var(--dark);padding:11px 24px;border-radius:8px;font-weight:700;font-size:0.82rem;text-decoration:none;white-space:nowrap;transition:all .2s;}
+.nl-strip p{font-size:0.8rem;color:var(--gray2);margin-top:3px;}
+.nl-strip a{background:var(--gold);color:var(--dark);padding:10px 22px;border-radius:8px;font-weight:700;font-size:0.8rem;text-decoration:none;white-space:nowrap;transition:all .2s;}
 .nl-strip a:hover{background:var(--gold2);}
-
-/* FOOTER */
-footer{background:var(--dark2);border-top:1px solid rgba(255,255,255,0.05);padding:30px 40px;text-align:center;}
-.foot-logo{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:4px;margin-bottom:8px;}
+.back-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:10px;}
+.back-btn{padding:11px 22px;border-radius:8px;text-decoration:none;font-size:0.8rem;font-weight:600;transition:all .2s;border:1px solid rgba(255,255,255,0.08);color:var(--white);background:var(--dark2);}
+.back-btn:hover{border-color:rgba(245,197,24,0.3);color:var(--gold);}
+.back-btn.green{background:rgba(30,215,96,0.08);color:#1ed760;border-color:rgba(30,215,96,0.2);}
+.back-btn.tg{background:rgba(0,136,204,0.08);color:#0088cc;border-color:rgba(0,136,204,0.2);}
+footer{background:var(--dark2);border-top:1px solid rgba(255,255,255,0.05);padding:28px 40px;text-align:center;}
+.foot-logo{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:4px;margin-bottom:8px;}
 .foot-logo span{color:var(--gold);}
-.foot-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:14px;}
-.foot-links a{font-size:0.78rem;color:var(--gray2);text-decoration:none;transition:color .2s;}
+.foot-links{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:12px;}
+.foot-links a{font-size:0.76rem;color:var(--gray2);text-decoration:none;transition:color .2s;}
 .foot-links a:hover{color:var(--gold);}
-.foot-copy{font-size:0.72rem;color:var(--gray);}
-
-/* REVEAL */
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
+.foot-copy{font-size:0.7rem;color:var(--gray);}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s;}
 .reveal.visible{opacity:1;transform:translateY(0);}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  .prod-grid{grid-template-columns:repeat(2,1fr);}
-  nav{padding:14px 20px;}
-  .container{padding:0 20px 60px;}
-  .hero{padding:100px 20px 40px;}
-}
-@media(max-width:600px){
-  .prod-grid{grid-template-columns:1fr;}
-  .nl-strip{flex-direction:column;text-align:center;}
-}
+@media(max-width:900px){.prod-grid{grid-template-columns:repeat(2,1fr);}nav{padding:14px 20px;}.container{padding:0 20px 60px;}.hero{padding:100px 20px 40px;}.nl-strip{flex-direction:column;text-align:center;padding:20px;}}
+@media(max-width:600px){.prod-grid{grid-template-columns:1fr;}}.hidden{display:none;}
 </style>
 </head>
 <body>
-
 <div id="progress"></div>
 
-<!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">B<span>Y</span>K</a>
-  <div style="display:flex;gap:10px;">
-    <a href="/" class="nav-back">← Home</a>
-    <a href="https://youtube.com/@buildyourknowledge2495" target="_blank" class="nav-home">Subscribe ▶</a>
+  <div class="nav-btns">
+    <a href="/" class="btn-back">← Home</a>
+    <a href="https://youtube.com/@buildyourknowledge2495" target="_blank" class="btn-sub">Subscribe ▶</a>
   </div>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-badge">✨ BYK Recommends</div>
   <h1>Best Products For<br><span>Knowledge Seekers</span></h1>
-  <p>Amin Qureshi ki personal picks — jo main khud use karta hoon ya recommend karta hoon BYK community ke liye!</p>
+  <p>Amin Qureshi ki personal picks — BYK community ke liye best books, earbuds aur study gadgets India mein!</p>
   <div class="disclosure">
-    <strong>⚠️ Affiliate Disclosure:</strong> Is page pe kuch affiliate links hain. Agar aap inhe use karke kharidenge toh BYK ko thodi commission milegi — aapko koi extra charge nahi lagega! Yeh BYK ko support karne ka ek tarika hai. 🙏
+    <strong>⚠️ Affiliate Disclosure:</strong> Kuch links affiliate hain. Kharidne pe BYK ko thodi commission milti hai — aapko koi extra charge nahi. BYK support karne ka easy tarika! 🙏
   </div>
 </div>
 
-<!-- CATEGORY TABS -->
 <div class="container">
   <div class="tabs">
-    <div class="tab active" onclick="filterCat('all',this)">🔥 All</div>
+    <div class="tab active" onclick="filterCat('all',this)">🔥 Sab</div>
     <div class="tab" onclick="filterCat('earbuds',this)">🎧 Earbuds</div>
     <div class="tab" onclick="filterCat('books',this)">📚 Books</div>
     <div class="tab" onclick="filterCat('gadgets',this)">📱 Gadgets</div>
-    <div class="tab" onclick="filterCat('study',this)">✏️ Study</div>
   </div>
 
-  <!-- EARBUDS SECTION -->
-  <div class="cat-section reveal" data-cat="earbuds">
-    <div class="cat-title">🎧 Best Earbuds For <span>Podcast Listeners</span></div>
-    <div class="cat-sub">BYK Book Summary podcast sunne ke liye best earbuds — har budget ke liye!</div>
+  <!-- EARBUDS -->
+  <div class="cat-section reveal" id="cat-earbuds">
+    <div class="cat-header">
+      <div class="cat-label">🎧 Earbuds</div>
+      <div class="cat-title">Podcast Ke Liye <span>Best Earbuds</span></div>
+      <div class="cat-sub">BYK Book Summary podcast sunne ke liye — har budget ke liye best picks!</div>
+    </div>
     <div class="prod-grid">
-
-      <!-- Product 1 -->
-      <div class="prod-card" data-cat="earbuds">
-        <div class="prod-badge">Best Budget</div>
+      <div class="prod-card">
+        <div class="prod-badge badge-gold">Best Budget</div>
         <div class="prod-img">🎧</div>
         <div class="prod-body">
-          <div class="prod-category">Earbuds</div>
+          <div class="prod-cat">Earbuds</div>
           <div class="prod-name">boAt Airdopes 181</div>
-          <div class="prod-desc">Best budget TWS earbuds — great sound, long battery, perfect for podcast listening!</div>
-          <div class="prod-rating">
-            <span class="stars">⭐⭐⭐⭐⭐</span>
-            <span class="rating-text">4.5/5 — Best Seller</span>
-          </div>
+          <div class="prod-desc">Best budget TWS earbuds India mein! 40 hours battery, great sound — podcast ke liye perfect hai!</div>
+          <div class="prod-stars">⭐⭐⭐⭐⭐ <span>4.5/5 — Best Seller</span></div>
           <div class="prod-btns">
             <a href="https://amzn.to/4sAKs65" target="_blank" rel="nofollow sponsored" class="btn-amazon">🛒 Amazon</a>
-            <a href="https://fktr.in/lxhZv33" target="_blank" rel="nofollow sponsored" class="btn-flipkart">🛍️ Flipkart</a>
+            <a href="https://fktr.in/lxhZv33" target="_blank" rel="nofollow sponsored" class="btn-flip">🛍️ Flipkart</a>
           </div>
         </div>
       </div>
-
-      <!-- Product 2 -->
-      <div class="prod-card" data-cat="earbuds">
-        <div class="prod-badge red">Under ₹1000</div>
+      <div class="prod-card">
+        <div class="prod-badge badge-red">Under ₹1000</div>
         <div class="prod-img">🎧</div>
         <div class="prod-body">
-          <div class="prod-category">Earbuds</div>
-          <div class="prod-name">Realme Buds</div>
-          <div class="prod-desc">Best value under ₹1000 — perfect for students aur beginners ke liye!</div>
-          <div class="prod-rating">
-            <span class="stars">⭐⭐⭐⭐</span>
-            <span class="rating-text">4.2/5 — Value Pick</span>
-          </div>
+          <div class="prod-cat">Earbuds</div>
+          <div class="prod-name">Realme Buds T100</div>
+          <div class="prod-desc">Under ₹1000 mein best earbuds — students ke liye ideal, comfortable aur clear sound!</div>
+          <div class="prod-stars">⭐⭐⭐⭐ <span>4.2/5 — Value Pick</span></div>
           <div class="prod-btns">
             <a href="https://amzn.to/4sAKs65" target="_blank" rel="nofollow sponsored" class="btn-amazon">🛒 Amazon</a>
           </div>
         </div>
       </div>
-
-      <!-- Product 3 -->
-      <div class="prod-card" data-cat="earbuds">
-        <div class="prod-badge green">Premium</div>
+      <div class="prod-card">
+        <div class="prod-badge badge-green">Premium</div>
         <div class="prod-img">🎧</div>
         <div class="prod-body">
-          <div class="prod-category">Earbuds</div>
-          <div class="prod-name">OnePlus Nord Buds</div>
-          <div class="prod-desc">Premium quality earbuds — best for serious listeners aur long study sessions!</div>
-          <div class="prod-rating">
-            <span class="stars">⭐⭐⭐⭐⭐</span>
-            <span class="rating-text">4.6/5 — Premium Pick</span>
-          </div>
+          <div class="prod-cat">Earbuds</div>
+          <div class="prod-name">OnePlus Nord Buds 2</div>
+          <div class="prod-desc">ANC ke saath premium earbuds — long study sessions ke liye best, noise cancel karta hai!</div>
+          <div class="prod-stars">⭐⭐⭐⭐⭐ <span>4.6/5 — Premium Pick</span></div>
           <div class="prod-btns">
             <a href="https://amzn.to/4sAKs65" target="_blank" rel="nofollow sponsored" class="btn-amazon">🛒 Amazon</a>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
   <div class="divider"></div>
 
-  <!-- BOOKS SECTION -->
-  <div class="cat-section reveal" data-cat="books">
-    <div class="cat-title">📚 BYK <span>Recommended Books</span></div>
-    <div class="cat-sub">Yeh books BYK Book Summary channel pe cover ki hain — khud padhne ke liye best picks!</div>
+  <!-- SELF HELP BOOKS -->
+  <div class="cat-section reveal" id="cat-books">
+    <div class="cat-header">
+      <div class="cat-label">📚 Books</div>
+      <div class="cat-title">BYK <span>Recommended Books</span></div>
+      <div class="cat-sub">Yeh books BYK Book Summary channel pe cover ki hain — khud padhne ke liye best picks!</div>
+    </div>
+
+    <!-- Self Help -->
+    <div style="margin-bottom:10px;font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gray2);">Self Help & Motivation</div>
+    <div class="prod-grid" style="margin-bottom:28px;">
+      <div class="prod-card">
+        <div class="prod-badge badge-gold">Must Read</div>
+        <div class="prod-img">📖</div>
+        <div class="prod-body">
+          <div class="prod-cat">Self Help</div>
+          <div class="prod-name">Lok Vyavhar — How to Win Friends</div>
+          <div class="prod-desc">Dale Carnegie ki legendary book — Hindi mein! BYK Book Summary pe cover ki gayi. Life changing hai!</div>
+          <div class="prod-stars">⭐⭐⭐⭐⭐ <span>4.8/5 — All Time Best</span></div>
+          <div class="prod-btns">
+            <a href="https://amzn.to/4sAKs65" target="_blank" rel="nofollow sponsored" class="btn-amazon">🛒 Amazon</a>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-badge badge-red">Bestseller</div>
+        <div class="prod-img">📗</div>
+        <div class="prod-body">
+          <div class="prod-cat">Finance</div>
+          <div class="prod-name">Rich Dad Poor Dad — Hindi</div>
+          <div class="prod-desc">Robert Kiyosaki ki financial classic — Hindi edition. Paisa banana seekhna hai toh yeh zaroori hai!</div>
+          <div class="prod-stars">⭐⭐⭐⭐⭐ <span>4.7/5 — Finance Classic</span></div>
+          <div class="prod-btns">
+            <a href="https://amzn.to/4sAKs65" target="_blank" rel="nofollow sponsored" class="btn-amazon">🛒 Amazon</a>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-badge badge-green">Popular</div>
+        <div class="prod-img">📘</div>
+        <div class="prod-body">
+          <div class="prod-cat">Motivation</div>
+          <div class="prod-name">Sone Se Pehle — Gaur Gopal Das</div>
+          <div class="prod-desc">India ke popular monk ki motivational book — Hinglish readers ke liye perfect daily read!</div>
+          <div class="prod-stars">⭐⭐⭐⭐⭐ <span>4.6/5 — Motivation</span></div>
+          <div class="prod-btns">
+            <a href="https://amzn.to/4sAKs65" target="_blank" rel="nofollow sponsored" class="btn-amazon">🛒 Amazon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UPSC Books -->
+    <div style="margin-bottom:10px;font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gray2);">UPSC Preparation Books</div>
     <div class="prod-grid">
-      <div class="coming-card">
-        <div class="icon">📖</div>
-        <p>Coming Soon!</p>
-        <p style="font-size:0.72rem;color:var(--gray);">Book recommendations aa rahe hain!</p>
+      <div class="prod-card">
+        <div class="prod-badge badge-blue">UPSC Must</div>
+        <div class="prod-img">🎯</div>
+        <div class="prod-body">
+          <div class="prod-cat">UPSC</div>
+          <div class="prod-name">Indian Polity — M. Laxmikanth Hindi</div>
+          <div class="prod-desc">UPSC ka sabse important book — Laxmikanth ki Indian Polity Hindi edition. UPSC Edge pe cover kiya!</div>
+          <div class="prod-stars">⭐⭐⭐⭐⭐ <span>4.9/5 — UPSC Bible</span></div>
+          <div class="prod-btns">
+            <a href="https://amzn.to/4sAKs65" target="_blank" rel="nofollow sponsored" class="btn-amazon">🛒 Amazon</a>
+          </div>
+        </div>
       </div>
-      <div class="coming-card">
-        <div class="icon">📗</div>
-        <p>Coming Soon!</p>
-        <p style="font-size:0.72rem;color:var(--gray);">Finance books list!</p>
+      <div class="prod-card">
+        <div class="prod-badge badge-gold">GK Must</div>
+        <div class="prod-img">📕</div>
+        <div class="prod-body">
+          <div class="prod-cat">UPSC / GK</div>
+          <div class="prod-name">Lucent's General Knowledge Hindi</div>
+          <div class="prod-desc">Lucent GK — sabse popular GK book India mein. SSC, UPSC, Railway sab ke liye useful!</div>
+          <div class="prod-stars">⭐⭐⭐⭐⭐ <span>4.8/5 — GK Classic</span></div>
+          <div class="prod-btns">
+            <a href="https://amzn.to/4sAKs65" target="_blank" rel="nofollow sponsored" class="btn-amazon">🛒 Amazon</a>
+          </div>
+        </div>
       </div>
-      <div class="coming-card">
-        <div class="icon">📘</div>
-        <p>Coming Soon!</p>
-        <p style="font-size:0.72rem;color:var(--gray);">UPSC books list!</p>
+      <div class="prod-card">
+        <div class="prod-badge badge-red">Economy</div>
+        <div class="prod-img">💰</div>
+        <div class="prod-body">
+          <div class="prod-cat">UPSC / Finance</div>
+          <div class="prod-name">Indian Economy — Ramesh Singh Hindi</div>
+          <div class="prod-desc">Indian Economy ka best book — UPSC aur finance dono ke liye. BYK Finance channel pe cover!</div>
+          <div class="prod-stars">⭐⭐⭐⭐⭐ <span>4.7/5 — Economy Best</span></div>
+          <div class="prod-btns">
+            <a href="https://amzn.to/4sAKs65" target="_blank" rel="nofollow sponsored" class="btn-amazon">🛒 Amazon</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="divider"></div>
 
-  <!-- GADGETS SECTION -->
-  <div class="cat-section reveal" data-cat="gadgets">
-    <div class="cat-title">📱 Study <span>Gadgets</span></div>
-    <div class="cat-sub">Best gadgets for students aur knowledge seekers!</div>
+  <!-- GADGETS -->
+  <div class="cat-section reveal" id="cat-gadgets">
+    <div class="cat-header">
+      <div class="cat-label">📱 Gadgets</div>
+      <div class="cat-title">Study <span>Smart Gadgets</span></div>
+      <div class="cat-sub">Students ke liye best gadgets — padhai aasaan aur smart banao!</div>
+    </div>
     <div class="prod-grid">
-      <div class="coming-card">
-        <div class="icon">📱</div>
-        <p>Coming Soon!</p>
-        <p style="font-size:0.72rem;color:var(--gray);">Best phones for students!</p>
+      <div class="prod-card">
+        <div class="prod-badge badge-gold">Best Value</div>
+        <div class="prod-img">📱</div>
+        <div class="prod-body">
+          <div class="prod-cat">Tablet</div>
+          <div class="prod-name">Redmi Pad SE</div>
+          <div class="prod-desc">Budget tablet for students — online classes, YouTube, BYK videos dekhne ke liye perfect. 8.7 inch screen!</div>
+          <div class="prod-stars">⭐⭐⭐⭐ <span>4.3/5 — Budget Best</span></div>
+          <div class="prod-btns">
+            <a href="https://amzn.to/4sAKs65" target="_blank" rel="nofollow sponsored" class="btn-amazon">🛒 Amazon</a>
+          </div>
+        </div>
       </div>
-      <div class="coming-card">
-        <div class="icon">💻</div>
-        <p>Coming Soon!</p>
-        <p style="font-size:0.72rem;color:var(--gray);">Laptop recommendations!</p>
+      <div class="prod-card">
+        <div class="prod-badge badge-blue">Power Bank</div>
+        <div class="prod-img">🔋</div>
+        <div class="prod-body">
+          <div class="prod-cat">Accessories</div>
+          <div class="prod-name">Mi Power Bank 20000mAh</div>
+          <div class="prod-desc">Long study sessions ke liye power bank zaroori hai! Xiaomi ka reliable 20000mAh — multiple devices charge karo!</div>
+          <div class="prod-stars">⭐⭐⭐⭐⭐ <span>4.6/5 — Reliable</span></div>
+          <div class="prod-btns">
+            <a href="https://amzn.to/4sAKs65" target="_blank" rel="nofollow sponsored" class="btn-amazon">🛒 Amazon</a>
+          </div>
+        </div>
       </div>
-      <div class="coming-card">
-        <div class="icon">🖊️</div>
-        <p>Coming Soon!</p>
-        <p style="font-size:0.72rem;color:var(--gray);">Stationery picks!</p>
+      <div class="prod-card">
+        <div class="prod-badge badge-green">Study Tool</div>
+        <div class="prod-img">✏️</div>
+        <div class="prod-body">
+          <div class="prod-cat">Stationery</div>
+          <div class="prod-name">Casio Scientific Calculator</div>
+          <div class="prod-desc">UPSC, SSC, Banking exams ke liye best calculator. Casio FX-991 — India ka #1 scientific calculator!</div>
+          <div class="prod-stars">⭐⭐⭐⭐⭐ <span>4.7/5 — Exam Essential</span></div>
+          <div class="prod-btns">
+            <a href="https://amzn.to/4sAKs65" target="_blank" rel="nofollow sponsored" class="btn-amazon">🛒 Amazon</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="divider"></div>
 
-  <!-- NEWSLETTER STRIP -->
+  <!-- NEWSLETTER -->
   <div class="nl-strip reveal">
     <div>
-      <h3>Join <span>BYK Family!</span></h3>
-      <p>Naye recommendations seedha inbox mein pao!</p>
+      <h3>BYK <span>Podcast Suno!</span></h3>
+      <p>Best books ki summary Hinglish mein — free!</p>
     </div>
-    <a href="https://open.spotify.com/show/0FXuewhdUTwl8mnPT3HDX3" target="_blank">🎧 Listen Podcast →</a>
+    <a href="https://open.spotify.com/show/0FXuewhdUTwl8mnPT3HDX3" target="_blank">🎧 Spotify Pe Suno →</a>
   </div>
 
   <!-- BACK LINKS -->
-  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;" class="reveal">
-    <a href="/" style="background:var(--dark2);color:var(--white);padding:12px 24px;border-radius:8px;text-decoration:none;font-size:0.82rem;border:1px solid rgba(255,255,255,0.08);transition:all .2s;" onmouseover="this.style.borderColor='rgba(245,197,24,0.3)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">🏠 BYK Home</a>
-    <a href="https://youtube.com/@bykbooksummary" target="_blank" style="background:var(--dark2);color:var(--white);padding:12px 24px;border-radius:8px;text-decoration:none;font-size:0.82rem;border:1px solid rgba(255,255,255,0.08);transition:all .2s;" onmouseover="this.style.borderColor='rgba(245,197,24,0.3)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">📺 BYK Book Summary</a>
-    <a href="https://open.spotify.com/show/0FXuewhdUTwl8mnPT3HDX3" target="_blank" style="background:rgba(30,215,96,0.1);color:#1ed760;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:0.82rem;border:1px solid rgba(30,215,96,0.2);transition:all .2s;">🎧 Spotify Podcast</a>
-    <a href="https://t.me/aminsalim4021" target="_blank" style="background:rgba(0,136,204,0.1);color:#0088cc;padding:12px 24px;border-radius:8px;text-decoration:none;font-size:0.82rem;border:1px solid rgba(0,136,204,0.2);transition:all .2s;">✈️ Telegram</a>
+  <div class="back-btns reveal">
+    <a href="/" class="back-btn">🏠 BYK Home</a>
+    <a href="https://youtube.com/@bykbooksummary" target="_blank" class="back-btn">📺 BYK Book Summary</a>
+    <a href="https://open.spotify.com/show/0FXuewhdUTwl8mnPT3HDX3" target="_blank" class="back-btn green">🎧 Spotify</a>
+    <a href="https://t.me/aminsalim4021" target="_blank" class="back-btn tg">✈️ Telegram</a>
   </div>
-
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="foot-logo">B<span>Y</span>K</div>
   <div class="foot-links">
@@ -319,39 +368,40 @@ footer{background:var(--dark2);border-top:1px solid rgba(255,255,255,0.05);paddi
 </footer>
 
 <script>
-// Progress bar
-window.addEventListener('scroll', () => {
-  const p = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-  document.getElementById('progress').style.width = p + '%';
-}, {passive: true});
+window.addEventListener('scroll',()=>{
+  const p=(window.scrollY/(document.documentElement.scrollHeight-window.innerHeight))*100;
+  document.getElementById('progress').style.width=p+'%';
+},{passive:true});
 
-// Reveal animations
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if(e.isIntersecting) e.target.classList.add('visible');
-  });
-}, {threshold: 0.1});
-document.querySelectorAll('.reveal').forEach(r => obs.observe(r));
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
+},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(r=>obs.observe(r));
 
-// Category filter
-function filterCat(cat, el) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+function filterCat(cat,el){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   el.classList.add('active');
-  document.querySelectorAll('.cat-section').forEach(s => {
-    if(cat === 'all' || s.dataset.cat === cat) {
-      s.style.display = 'block';
-    } else {
-      s.style.display = 'none';
-    }
-  });
-  document.querySelectorAll('.divider').forEach(d => {
-    d.style.display = cat === 'all' ? 'block' : 'none';
-  });
+  const sections={'earbuds':'cat-earbuds','books':'cat-books','gadgets':'cat-gadgets'};
+  if(cat==='all'){
+    Object.values(sections).forEach(id=>{
+      const el=document.getElementById(id);
+      if(el)el.classList.remove('hidden');
+    });
+    document.querySelectorAll('.divider').forEach(d=>d.style.display='block');
+  } else {
+    Object.entries(sections).forEach(([key,id])=>{
+      const el=document.getElementById(id);
+      if(el){
+        if(key===cat)el.classList.remove('hidden');
+        else el.classList.add('hidden');
+      }
+    });
+    document.querySelectorAll('.divider').forEach(d=>d.style.display='none');
+  }
 }
 
-// Service worker
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js').catch(() => {});
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('sw.js').catch(()=>{});
 }
 </script>
 </body>
